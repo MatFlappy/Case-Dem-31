@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Case_Dem_31.View.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,18 @@ namespace Case_Dem_31
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Registration reg = new Registration();
+            reg.Show();
+            this.Close();
         }
     }
 }

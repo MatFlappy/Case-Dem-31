@@ -36,19 +36,19 @@
             <TextBlock FontSize="24"
                 Text="Логин" Grid.Column="1" Grid.Row="2"/>
             
-            <TextBox 
+            <TextBox x:Name="usernameTextBox"
                 Grid.Column="1" Grid.Row="3"/>
 
             <TextBlock Text="Пароль" FontSize="24"
                        Grid.Column="1" Grid.Row="4"/>
             
-            <PasswordBox 
+            <PasswordBox x:Name="userpasswordBox"
                 Grid.Column="1" Grid.Row="5"/>
             
             <Button Background="#3c3c3c" FontSize="16"
                     Foreground="White"
                     Content="Войти"
-                Grid.Column="1" Grid.Row="7"/>
+                Grid.Column="1" Grid.Row="7" Click="Button_Click"/>
         </Grid>
         <!--Правая часть окна-->
         <Grid Grid.Column="1" Background="#3c3c3c">
@@ -76,7 +76,7 @@
                 Foreground="White" 
                 FontSize="16" Background="Transparent"
                 BorderBrush="White"
-                Content="Зарегистрироваться" Grid.Column="1" Grid.Row="5"/>
+                Content="Зарегистрироваться" Grid.Column="1" Grid.Row="5" Click="Button_Click_1"/>
         </Grid>
     </Grid>
 </Window>
